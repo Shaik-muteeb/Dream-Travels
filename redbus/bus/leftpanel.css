@@ -1,0 +1,204 @@
+body{
+    background-color: #2d3031;
+}
+.right-panel{
+    height: 520px;
+    width: 1272px;
+    
+    float: left;
+    min-height: 520px;
+    align-items: center;
+    /* border: 1px solid; */
+    
+}
+.right-panel .profiledetails {
+    margin-left: 400px;
+}
+.r {
+    height: 120px;
+    width: 1272px;
+    
+    min-height: 520px;
+    
+}
+.r1 {
+    
+    width: 1272px;
+    margin-top: -250px;
+    float: left;
+   
+    
+}
+.r .p {
+    margin-left: 500px;
+}
+.r1 .p {
+    margin-left: 500px;
+}
+.r.p1 {
+    margin-left: 1000px;
+}
+.greyText{
+    height: 23px;
+    width: 94px;
+    margin: 30px 0 17px 120px;
+    display: inline-block;
+    font-size: 20px;
+}
+.profiledetails{
+    height: 500px;
+    width: 600px;
+    margin: 7px 0 15px 120px; 
+    display: block;
+    box-sizing: border-box;
+    box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
+    border-top-left-radius: 6.66px;
+    border-top-right-radius: 6.66px;
+    border-bottom-left-radius: 6.66px;
+    border-bottom-right-radius: 6.66px;
+    font-size: 13.33px;
+    font-family: Montserrat;
+    z-index: -1;
+}
+.p {
+        height: 180px;
+        width: 600px;
+        margin: 7px 0 15px 120px; 
+        display: block;
+        box-sizing: border-box;
+        box-shadow: rgb(62, 67, 69) 0px 0px 10px 0px;
+        border-top-left-radius: 6.66px;
+        border-top-right-radius: 6.66px;
+        border-bottom-left-radius: 6.66px;
+        border-bottom-right-radius: 6.66px;
+        font-size: 13.33px;
+        font-family: Montserrat;
+        z-index: -1;
+}
+.p1 {
+    height: 180px;
+    width: 900px;
+    margin: 7px 0 105px 120px; 
+    display: block;
+    box-sizing: border-box;
+    box-shadow: rgb(62, 67, 69) 0px 0px 5px 0px;
+    border-top-left-radius: 6.66px;
+    border-top-right-radius: 6.66px;
+    border-bottom-left-radius: 6.66px;
+    border-bottom-right-radius: 6.66px;
+    font-size: 13.33px;
+    font-family: Montserrat;
+    z-index: -1;
+}
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.profile-header {
+    text-align: center;
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-info {
+    margin-top: 20px;
+}
+.profile-info p {
+    margin: 10px 0;
+}
+.profile-info span {
+    font-weight: bold;
+}
+.userdetail3{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px ;
+    width: 1000px;
+    margin: 0 80px 0 80px;
+    /* border: 1px solid; */
+}
+.userdetail3 > input{
+    border: none;
+    width: 180px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 500px){
+    .boxContainer{
+        width: 100%;
+        height: auto;
+        margin-top: -15px;
+    
+    }
+    .boxContainer .leftPanel, .right-panel{
+     
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: #d0c7c7;
+    }
+}
+
+ul{
+    list-style-type:none;
+ }
+ .main-div8{
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    top: 550px;
+ }
+ .main-div8 > .div8-inner{
+     width: 80%;
+     margin: auto;
+     display: flex;
+     color: #d0c7c7;
+ } 
+ 
+ .ul-li-head{
+     color: #797979;
+     font-size: 17px;
+     font-weight: 700;
+ }
+ .main-div8 .div8-inner div{
+     width: 335px;
+     line-height: 30px;
+     letter-spacing: 0.5px;
+     margin-top: 30px;
+ }
+ .main-div8 .div8-inner .red-bus{
+     width: 450px;
+ }
+ .main-div8 .div8-inner .red-bus .img{
+     display: flex;
+  width: 50px;
+  height: 50px;
+  margin-bottom: -12px;
+  margin-top: -10px;
+  cursor: pointer;
+ }
+ 
+ @media only screen and (max-width: 500px){
+     .main-div8{
+         width: 100%;
+         height: auto;
+         background-color: gray;
+         margin-top: -15px;
+     
+     }
+     .main-div8 .div8-inner{
+      
+         margin: auto;
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         color: #d0c7c7;
+     }
+ }

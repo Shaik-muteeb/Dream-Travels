@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Login/Signup</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body{
+            background-image: url("bus.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header{
+            margin-top: -500px; 
+            text-align: center;  
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <button onclick="window.location.href='../index.html'" id="backBtn">Back</button> -->
+    <header><h2>WELCOME TO DREAM TRAVELS!<br><br>Please login to proceed.</h2>
+    <br><br>
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button></header>
+    
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <div id="signinFormContainer" class="form-container">
+                <h2>Login to Your Account</h2>
+                <form id="signinForm" method="POST" action="login.php">
+                    <div class="form-group">
+                        <label for="signinMail">Email:</label>
+                        <input type="text" id="signinMail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signinPassword">Password:</label>
+                        <input type="password" id="signinPassword" name="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <div id="signinMessage"></div>
+                <p>Forgot Password? <a href="#" id="showReset">Reset</a></p>
+                <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+            </div>
+            
+            <div id="signupFormContainer" class="form-container">
+                <h2>Create an Account</h2>
+                <form id="signupForm" method="POST" action="signup.php">
+                    <div class="form-group">
+                        <label for="signupUsername">Username:</label>
+                        <input type="text" id="signupUsername" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email:</label>
+                        <input type="email" id="signupEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password:</label>
+                        <input type="password" id="signupPassword" name="password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div id="signupMessage"></div>
+                <p>Already have an account? <a href="#" id="showSignin">Login</a></p>
+            </div>
+
+            <div id="resetFormContainer" class="form-container">
+                <h2>Reset Password</h2>
+                <form id="resetForm" method="POST" action="reset.php">
+                    <div class="form-group">
+                        <label for="resetMail">Email:</label>
+                        <input type="text" id="resetMail" name="remail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resetPassword">Password:</label>
+                        <input type="password" id="resetPassword" name="rpassword" required>
+                    </div>
+                    <button type="submit">Reset</button>
+                </form>
+                <div id="resetMessage"></div>
+                <p>Back to login? <a href="#" id="shoSignin">Click here</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
